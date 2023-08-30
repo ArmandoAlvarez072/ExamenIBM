@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName
 
 data class BooksResponse(
     @SerializedName("items")
-    var items: List<Item?>?,
+    var books: List<Book?>?,
     @SerializedName("kind")
     var kind: String?,
     @SerializedName("totalItems")

@@ -1,5 +1,6 @@
 package armando.alvarez.examenibm.presentation.di
 
+import armando.alvarez.examenibm.presentation.adapter.BooksAdapter
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -10,9 +11,9 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 class AdapterModule {
 
-    /*@Singleton
+    @Singleton
     @Provides
-    fun providesLoanAdapter(): CommentsAdapter {
-        return CommentsAdapter()
-    }*/
+    fun providesBooksAdapter(): BooksAdapter {
+        return BooksAdapter()
+    }
 }

@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName
 
 data class ListPrice(
     @SerializedName("amount")
-    var amount: Int?,
+    var amount: Double?,
     @SerializedName("currencyCode")
     var currencyCode: String?
 )

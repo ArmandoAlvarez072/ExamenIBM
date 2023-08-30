@@ -3,7 +3,7 @@ package armando.alvarez.examenibm.data.model
 
 import com.google.gson.annotations.SerializedName
 
-data class Item(
+data class Book(
     @SerializedName("id")
     var id: String?,
     @SerializedName("saleInfo")

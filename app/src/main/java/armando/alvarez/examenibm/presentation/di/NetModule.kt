@@ -1,5 +1,6 @@
 package armando.alvarez.examenibm.presentation.di
 
+import armando.alvarez.examenibm.BuildConfig
 import armando.alvarez.examenibm.data.api.BooksApiService
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -62,7 +63,7 @@ class NetModule {
         gson: Gson
     ): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("")
+            .baseUrl(BuildConfig.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create(gson))
             .client(client)
             .build()

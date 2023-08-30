@@ -4,4 +4,7 @@
     <string name="btn_cancel">Cancelar</string>
     <string name="text_dialog_alert">Alerta</string>
     <string name="text_loading">Cargando…</string>
+    <string name="hint_search">Buscar…</string>
+    <string name="btn_search">Buscar</string>
+    <string name="btn_next">Siguiente</string>
 </resources>

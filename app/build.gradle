@@ -91,4 +91,8 @@ dependencies {
 
     // Gifs
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
 }

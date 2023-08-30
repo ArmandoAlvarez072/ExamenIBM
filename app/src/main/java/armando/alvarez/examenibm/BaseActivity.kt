@@ -8,9 +8,13 @@ import android.graphics.drawable.ColorDrawable
 import android.view.Window
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.LifecycleOwner
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.Observer
+import armando.alvarez.examenibm.data.util.Resource
 import com.google.android.material.textview.MaterialTextView
 
-class BaseActivity : AppCompatActivity() {
+open class BaseActivity : AppCompatActivity() {
 
     private var dialogIsDisplayed = false
     private var dialogLoadingIsDisplayed = false
@@ -111,5 +115,39 @@ class BaseActivity : AppCompatActivity() {
                 LoadingDialogFragment::class.java.simpleName
             )
         }
+    }
+
+    fun hideLoading() {
+        loadingDialog?.dismiss()
+        loadingDialog = null
+        dialogLoadingIsDisplayed = false
+    }
+
+    fun <T> LiveData<Resource<T>>.observeOnce(
+        owner: LifecycleOwner,
+        observer: (Resource<T>) -> Unit
+    ) {
+        observe(owner, object : Observer<Resource<T>> {
+            override fun onChanged(value: Resource<T>) {
+                when (value) {
+                    is Resource.Success -> {
+                        value.data?.let {
+                            removeObserver(this)
+                            observer(value)
+                        }
+                    }
+                    is Resource.Error -> {
+                        value.message?.let {
+                            removeObserver(this)
+                            observer(value)
+                        }
+                    }
+
+                    is Resource.Loading -> {
+                        observer(value)
+                    }
+                }
+            }
+        })
     }
 }
