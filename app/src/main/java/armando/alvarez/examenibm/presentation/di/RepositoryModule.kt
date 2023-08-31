@@ -1,6 +1,7 @@
 package armando.alvarez.examenibm.presentation.di
 
 import armando.alvarez.examenibm.data.repository.BooksRepositoryImpl
+import armando.alvarez.examenibm.data.repository.datasource.BooksLocalDataSource
 import armando.alvarez.examenibm.data.repository.datasource.BooksRemoteDataSource
 import armando.alvarez.examenibm.domain.repository.BooksRepository
 import dagger.Module
@@ -16,10 +17,12 @@ class RepositoryModule {
     @Singleton
     @Provides
     fun provideBooksRepository(
-        booksRemoteDataSource: BooksRemoteDataSource
+        booksRemoteDataSource: BooksRemoteDataSource,
+        booksLocalDataSource: BooksLocalDataSource
     ): BooksRepository {
         return BooksRepositoryImpl(
-            booksRemoteDataSource
+            booksRemoteDataSource,
+            booksLocalDataSource
         )
     }
 

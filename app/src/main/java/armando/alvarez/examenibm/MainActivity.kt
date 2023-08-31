@@ -28,7 +28,7 @@ class MainActivity : BaseActivity(), MainAux {
     @Inject
     lateinit var adapter: BooksAdapter
 
-    private var booksList: List<Book>? = mutableListOf()
+    private var booksList: MutableList<Book>? = mutableListOf()
     private var bookSelected: Book? = null
 
     private var results = 10
@@ -112,26 +112,66 @@ class MainActivity : BaseActivity(), MainAux {
         }
 
         binding.imgCheck.setOnClickListener {
+            page = 0
+            results = 0
+            searchSize = 0
+
             if (searchSaved) {
                 binding.imgCheck.setImageResource(R.drawable.uncheck)
                 if (!booksList.isNullOrEmpty()) {
+
                     binding.tilResults.visibility = View.VISIBLE
                     binding.tilFilter.visibility = View.VISIBLE
                 }
+
+                binding.btnSearch.visibility = View.VISIBLE
+                binding.tilSearch.visibility = View.VISIBLE
+                binding.etSearch.setText("")
+
+                booksList = mutableListOf()
+                adapter.differ.submitList(booksList)
+
             } else {
                 binding.imgCheck.setImageResource(R.drawable.check)
                 binding.tilResults.visibility = View.GONE
                 binding.tilFilter.visibility = View.GONE
+                binding.btnSearch.visibility = View.GONE
+                binding.tilSearch.visibility = View.GONE
+                getFavoritesBooks()
             }
 
             configConstraintsRv()
-
+            configPager()
             searchSaved = !searchSaved
+
         }
     }
 
     private fun getFavoritesBooks() {
-        TODO("Not yet implemented")
+
+        viewModel.getSavedSaleInfo().observe(this) { saleInfo ->
+            viewModel.getSavedVolumeInfo().observe(this) { volumeInfo ->
+                booksList = mutableListOf()
+                volumeInfo.forEach { volume ->
+                    saleInfo.forEach { sale ->
+                        if (volume.bookId == sale.bookId) {
+                            booksList?.add(
+                                Book(
+                                    volume.bookId,
+                                    sale,
+                                    volume
+                                )
+                            )
+                        }
+                    }
+                }
+
+                adapter.differ.submitList(booksList)
+
+            }
+        }
+
+        configPager()
     }
 
     private fun configConstraintsRv() {
@@ -146,12 +186,27 @@ class MainActivity : BaseActivity(), MainAux {
                 R.id.tilResults,
                 ConstraintSet.BOTTOM
             )
+
+            constraintSet.connect(
+                R.id.imgCheck,
+                ConstraintSet.TOP,
+                R.id.tilSearch,
+                ConstraintSet.BOTTOM
+            )
+
         } else {
             constraintSet.connect(
                 R.id.rvComments,
                 ConstraintSet.TOP,
                 R.id.imgCheck,
                 ConstraintSet.BOTTOM
+            )
+
+            constraintSet.connect(
+                R.id.imgCheck,
+                ConstraintSet.TOP,
+                R.id.container,
+                ConstraintSet.TOP
             )
         }
 
@@ -195,7 +250,7 @@ class MainActivity : BaseActivity(), MainAux {
         }
     }
 
-    private fun getBooks() {
+    fun getBooks() {
         if (!searchSaved) {
             if (binding.etSearch.text.isNullOrEmpty()) {
                 showAlert(
@@ -223,7 +278,7 @@ class MainActivity : BaseActivity(), MainAux {
                             response.data?.let {
                                 hideLoading()
                                 if (it.books?.size!! > 0) {
-                                    booksList = it.books
+                                    booksList = it.books?.toMutableList()
                                     if (startIndex == 0) {
                                         searchSize = it.totalItems!!
                                     }
@@ -279,17 +334,17 @@ class MainActivity : BaseActivity(), MainAux {
     }
 
     private fun configPager() {
-        if(searchSize > results){
+        if (searchSize > results) {
             binding.btnNext.visibility = View.VISIBLE
 
-            if(page == 0){
+            if (page == 0) {
                 binding.btnPrevious.visibility = View.INVISIBLE
-            }else{
-                if((page) * results >= searchSize ){
+            } else {
+                if ((page) * results >= searchSize) {
                     binding.btnNext.visibility = View.INVISIBLE
                 }
             }
-        }else{
+        } else {
             binding.btnNext.visibility = View.INVISIBLE
             binding.btnPrevious.visibility = View.INVISIBLE
         }
@@ -297,8 +352,11 @@ class MainActivity : BaseActivity(), MainAux {
 
 
     override fun showButtons(boolean: Boolean) {
-        binding.btnSearch.visibility = if (boolean) View.VISIBLE else View.GONE
-        binding.btnNext.visibility = if (boolean) View.VISIBLE else View.GONE
+        if (searchSaved) {
+            binding.btnSearch.visibility = View.GONE
+        } else {
+            binding.btnSearch.visibility = if (boolean) View.VISIBLE else View.GONE
+        }
     }
 
     override fun getBookSelected(): Book? = bookSelected

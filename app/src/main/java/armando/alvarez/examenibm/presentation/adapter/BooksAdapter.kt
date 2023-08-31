@@ -33,19 +33,12 @@ class BooksAdapter : RecyclerView.Adapter<BooksAdapter.ViewHolder>() {
     ) : RecyclerView.ViewHolder(binding.root) {
         fun bind(book: Book) {
 
-            var authors = ""
-
-            book.volumeInfo?.authors?.forEach {
-                authors += "$it, "
-            }
-
-            binding.tvAuthor.text =
-                if (!authors.isEmpty()) authors.substring(0, authors.length - 2) else ""
+            binding.tvAuthor.text = book.volumeInfo?.getAuthors()
             binding.tvTitle.text = book.volumeInfo?.title
             binding.tvDate.text = book.volumeInfo?.publishedDate
 
             Glide.with(binding.imgBook.context)
-                .load(book.volumeInfo?.imageLinks?.thumbnail)
+                .load(book.volumeInfo?.getImageLink())
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(binding.imgBook)
 
@@ -73,8 +66,8 @@ class BooksAdapter : RecyclerView.Adapter<BooksAdapter.ViewHolder>() {
     override fun getItemCount(): Int = differ.currentList.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val survey = differ.currentList[position]
-        holder.bind(survey)
+        val book = differ.currentList[position]
+        holder.bind(book)
     }
 
 }

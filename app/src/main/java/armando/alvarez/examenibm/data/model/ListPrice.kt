@@ -8,4 +8,9 @@ data class ListPrice(
     var amount: Double?,
     @SerializedName("currencyCode")
     var currencyCode: String?
-)
+) {
+    override fun toString(): String {
+        return if (amount == null || currencyCode.isNullOrEmpty()) ""
+        else String.format("%.2f", amount) + " $currencyCode"
+    }
+}

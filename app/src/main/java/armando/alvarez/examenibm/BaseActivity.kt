@@ -61,7 +61,7 @@ open class BaseActivity : AppCompatActivity() {
     }
 
     @SuppressLint("InflateParams")
-    private fun showAlertYesNo(
+    fun showAlertYesNo(
         title: String,
         message: String,
         functionYes: (() -> Unit)?,

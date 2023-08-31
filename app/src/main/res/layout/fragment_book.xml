@@ -87,7 +87,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvDescription"
-            app:layout_constraintBottom_toTopOf="@id/btnBuy"
             tools:text="Descripcion" />
 
         <com.google.android.material.imageview.ShapeableImageView
@@ -95,7 +94,7 @@
             android:layout_width="@dimen/icon_save"
             android:layout_height="@dimen/icon_save"
             android:layout_margin="@dimen/common_padding_default"
-            android:src="@drawable/no_guardado"
+            tools:src="@drawable/saved"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imgBook" />
 
@@ -111,7 +110,8 @@
             app:iconGravity="textEnd"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPrice"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -14,8 +14,10 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 
 
+@Suppress("NAME_SHADOWING")
 class BookFragment : Fragment() {
     private var binding: FragmentBookBinding? = null
+    private lateinit var viewModel: BooksViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -32,6 +34,7 @@ class BookFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        viewModel = (activity as MainActivity).viewModel
 
         setListeners()
         getBook()
@@ -47,34 +50,24 @@ class BookFragment : Fragment() {
         val book = (activity as? MainAux)?.getBookSelected()
 
         book?.let { book ->
+            viewModel.isSaved(book.id!!)
 
             binding?.let {
-                var authors = ""
 
-                book.volumeInfo?.authors?.forEach {
-                    authors += "$it, "
-                }
-
-                it.tvAuthor.text =
-                    if (!authors.isEmpty()) authors.substring(0, authors.length - 2) else ""
+                it.tvAuthor.text = book.volumeInfo?.getAuthors()
 
                 it.tvDescription.text = book.volumeInfo?.description
                 it.tvPrice.text =
-                    if (book.saleInfo?.listPrice?.amount == null ||
-                        book.saleInfo?.listPrice?.currencyCode.isNullOrEmpty()
-                    ) ""
-                    else
-                        activity?.getString(
-                            R.string.text_price,
-                            book.saleInfo?.listPrice?.amount,
-                            book.saleInfo?.listPrice?.currencyCode
-                        )
+                    activity?.getString(
+                        R.string.text_price,
+                        book.saleInfo?.getBookPrice()
+                    )
 
                 it.tvSubtitle.text = book.volumeInfo?.subtitle
                 it.tvTitle.text = book.volumeInfo?.title
 
                 Glide.with(it.imgBook.context)
-                    .load(book.volumeInfo?.imageLinks?.thumbnail)
+                    .load(book.volumeInfo?.getImageLink())
                     .diskCacheStrategy(DiskCacheStrategy.ALL)
                     .into(it.imgBook)
 
@@ -88,18 +81,47 @@ class BookFragment : Fragment() {
                         ).show()
                     } else {
                         val browserIntent =
-                            Intent(Intent.ACTION_VIEW, Uri.parse(book.saleInfo?.buyLink))
+                            Intent(Intent.ACTION_VIEW, Uri.parse(book.saleInfo?.buyLink.toString()))
 
                         startActivity(browserIntent)
                     }
 
                 }
+
+                viewModel.isSaved(book.id!!).observe(this) {
+                    if (it > 0) {
+                        binding!!.imgSave.setImageResource(R.drawable.saved)
+                        binding!!.imgSave.setOnClickListener {
+
+                            (activity as MainActivity).showAlertYesNo(
+                                getString(R.string.text_dialog_alert),
+                                getString(R.string.text_confirm_delete),
+                                fun() {
+                                    viewModel.deleteBook(book.id!!)
+                                    binding!!.imgSave.setImageResource(R.drawable.not_saved)
+                                    goBack()
+                                },
+                                null
+                            )
+                        }
+                    } else {
+                        binding!!.imgSave.setImageResource(R.drawable.not_saved)
+                        binding!!.imgSave.setOnClickListener {
+                            binding!!.imgSave.setImageResource(R.drawable.saved)
+                            viewModel.saveBook(book)
+                        }
+
+
+                    }
+                }
+
             }
         }
     }
 
     private fun goBack() {
         activity?.onBackPressedDispatcher?.onBackPressed()
+        (activity as MainActivity).getBooks()
     }
 
     override fun onDestroyView() {

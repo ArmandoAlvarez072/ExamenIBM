@@ -12,7 +12,8 @@
     <string name="btn_previous">Anterior</string>
     <string name="btn_buy">Comprar Ahora</string>
     <string name="toast_no_link">No se encuentra disponible el sitio para comprar el libro</string>
-    <string name="text_price">Precio: %1$.2f %2$s</string>
+    <string name="text_price">Precio: %1$s</string>
+    <string name="text_confirm_delete">¿Está seguro que desea eliminar este libro de favoritos?</string>
     <string name="text_filter">Tipo de Contenido:</string>
     <string name="text_empty">Debe ingresar datos para la búsqueda:</string>
 
