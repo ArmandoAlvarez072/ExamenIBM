@@ -3,6 +3,8 @@
     <string name="btn_accept">Aceptar</string>
     <string name="btn_cancel">Cancelar</string>
     <string name="text_dialog_alert">Alerta</string>
+    <string name="text_error">Ocurrió un error al realizar la búsqueda</string>
+    <string name="text_empty_search">No se encontraron resultados con los datos ingresados</string>
     <string name="text_loading">Cargando…</string>
     <string name="hint_search">Buscar…</string>
     <string name="btn_search">Buscar</string>
@@ -10,4 +12,23 @@
     <string name="btn_buy">Comprar Ahora</string>
     <string name="toast_no_link">No se encuentra disponible el sitio para comprar el libro</string>
     <string name="text_price">Precio: %1$.2f %2$s</string>
+    <string name="text_filter">Tipo de Contenido:</string>
+    <string name="text_empty">Debe ingresar datos para la búsqueda:</string>
+
+    <string name="hint_filter">Seleccione…</string>
+    <string name="hint_results">Resultados</string>
+
+    <string name="filter_full">full</string>
+    <string name="filter_partial">partial</string>
+    <string name="filter_free">free-ebooks</string>
+    <string name="filter_paid">paid-ebooks</string>
+    <string name="filter_ebook">ebooks</string>
+
+    <string name="text_filter_full">Texto Completo</string>
+    <string name="text_filter_partial">Prueba Gratuita</string>
+    <string name="text_filter_free">Ebook Gratuito</string>
+    <string name="text_filter_paid">Ebook de Paga</string>
+    <string name="text_filter_ebook">Ebook</string>
+    <string name="text_filter_saved">Buscar en Favoritos</string>
+
 </resources>

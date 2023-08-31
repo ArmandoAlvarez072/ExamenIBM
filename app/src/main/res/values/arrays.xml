@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="number_items">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+    </integer-array>
+
+    <string-array name="filter_value">
+        <item>@string/filter_full</item>
+        <item>@string/filter_partial</item>
+        <item>@string/filter_ebook</item>
+        <item>@string/filter_paid</item>
+        <item>@string/filter_free</item>
+    </string-array>
+
+    <string-array name="filter_text">
+        <item>@string/text_filter_full</item>
+        <item>@string/text_filter_partial</item>
+        <item>@string/text_filter_ebook</item>
+        <item>@string/text_filter_paid</item>
+        <item>@string/text_filter_free</item>
+    </string-array>
+</resources>

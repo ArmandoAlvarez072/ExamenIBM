@@ -11,4 +11,13 @@ class BooksRemoteDataSourceImpl(
     override suspend fun getBooks(title: String, page: Int, results: Int): Response<BooksResponse> {
         return booksApiService.getBooks(title, page, results)
     }
+
+    override suspend fun getFilteredBooks(
+        title: String,
+        filter: String,
+        page: Int,
+        results: Int
+    ): Response<BooksResponse> {
+        return booksApiService.getFilteredBooks(title, filter, page, results)
+    }
 }

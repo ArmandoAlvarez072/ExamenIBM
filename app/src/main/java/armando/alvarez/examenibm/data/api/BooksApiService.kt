@@ -15,4 +15,16 @@ interface BooksApiService {
         @Query("maxResults")
         results: Int
     ) : Response<BooksResponse>
+
+    @GET("volumes")
+    suspend fun getFilteredBooks(
+        @Query("q")
+        title: String,
+        @Query("filter")
+        filter: String,
+        @Query("startIndex")
+        page: Int,
+        @Query("maxResults")
+        results: Int
+    ) : Response<BooksResponse>
 }

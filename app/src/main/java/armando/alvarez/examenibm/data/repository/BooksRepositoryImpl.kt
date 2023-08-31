@@ -12,4 +12,13 @@ class BooksRepositoryImpl(
     override suspend fun getBooks(title: String, page: Int, results: Int): Resource<BooksResponse> {
         return Util.responseToResource(booksRemoteDataSource.getBooks(title, page, results))
     }
+
+    override suspend fun getFilteredBooks(
+        title: String,
+        filter: String,
+        page: Int,
+        results: Int
+    ): Resource<BooksResponse> {
+        return Util.responseToResource(booksRemoteDataSource.getFilteredBooks(title,filter, page, results))
+    }
 }

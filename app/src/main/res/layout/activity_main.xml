@@ -14,6 +14,7 @@
         android:fillViewport="true">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -27,7 +28,6 @@
                 app:layout_constraintEnd_toStartOf="@id/btnSearch"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
-
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etSearch"
@@ -54,12 +54,73 @@
                 app:layout_constraintStart_toEndOf="@id/tilSearch"
                 app:layout_constraintTop_toTopOf="@id/tilSearch" />
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilResults"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="@dimen/actv_results"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_padding_default"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imgCheck">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/actvResults"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/hint_results"
+                    android:inputType="none"
+                    android:textAlignment="center" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilFilter"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_padding_default"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tilResults"
+                app:layout_constraintTop_toBottomOf="@id/imgCheck">
+
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/actvFilter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/hint_filter"
+                    android:inputType="none"
+                    android:textAlignment="center" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvCheck"
+                style="@style/TextViewBodyBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_padding_default"
+                android:text="@string/text_filter_saved"
+                app:layout_constraintBottom_toBottomOf="@id/imgCheck"
+                app:layout_constraintEnd_toStartOf="@id/imgCheck"
+                app:layout_constraintTop_toTopOf="@id/imgCheck" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgCheck"
+                android:layout_width="@dimen/check_size"
+                android:layout_height="@dimen/check_size"
+                android:layout_margin="@dimen/common_padding_default"
+                android:src="@drawable/uncheck"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tilSearch" />
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvComments"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginTop="@dimen/common_padding_default"
-                app:layout_constraintTop_toBottomOf="@id/tilSearch"
+                app:layout_constraintTop_toBottomOf="@id/tilResults"
                 tools:listitem="@layout/item_book" />
 
             <com.google.android.material.button.MaterialButton
