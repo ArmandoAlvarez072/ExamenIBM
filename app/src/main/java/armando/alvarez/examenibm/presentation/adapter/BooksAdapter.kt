@@ -1,13 +1,11 @@
 package armando.alvarez.examenibm.presentation.adapter
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import armando.alvarez.examenibm.R
 import armando.alvarez.examenibm.data.model.Book
 import armando.alvarez.examenibm.databinding.ItemBookBinding
 import com.bumptech.glide.Glide
@@ -32,8 +30,7 @@ class BooksAdapter : RecyclerView.Adapter<BooksAdapter.ViewHolder>() {
 
     inner class ViewHolder(
         private val binding: ItemBookBinding
-    ) :
-        RecyclerView.ViewHolder(binding.root) {
+    ) : RecyclerView.ViewHolder(binding.root) {
         fun bind(book: Book) {
 
             var authors = ""
@@ -49,8 +46,14 @@ class BooksAdapter : RecyclerView.Adapter<BooksAdapter.ViewHolder>() {
 
             Glide.with(binding.imgBook.context)
                 .load(book.volumeInfo?.imageLinks?.thumbnail)
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(binding.imgBook)
 
+            binding.root.setOnClickListener {
+                onItemClickListener?.let {
+                    it(book)
+                }
+            }
         }
     }
 

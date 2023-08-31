@@ -7,4 +7,7 @@
     <string name="hint_search">Buscar…</string>
     <string name="btn_search">Buscar</string>
     <string name="btn_next">Siguiente</string>
+    <string name="btn_buy">Comprar Ahora</string>
+    <string name="toast_no_link">No se encuentra disponible el sitio para comprar el libro</string>
+    <string name="text_price">Precio: %1$.2f %2$s</string>
 </resources>

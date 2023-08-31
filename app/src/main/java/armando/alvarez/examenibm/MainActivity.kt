@@ -4,24 +4,31 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.view.View
 import androidx.activity.viewModels
+import androidx.fragment.app.commit
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.GridLayoutManager
+import armando.alvarez.examenibm.data.model.Book
 import armando.alvarez.examenibm.data.util.Resource
 import armando.alvarez.examenibm.databinding.ActivityMainBinding
 import armando.alvarez.examenibm.presentation.adapter.BooksAdapter
 import armando.alvarez.examenibm.presentation.viewmodel.BooksViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import java.io.Serializable
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class MainActivity : BaseActivity() {
+class MainActivity : BaseActivity() ,MainAux {
     private lateinit var binding: ActivityMainBinding
 
     @Inject
     lateinit var adapter: BooksAdapter
 
-    private val viewModel: BooksViewModel by viewModels()
+    private var booksList: List<Book>? = mutableListOf()
+    private var bookSelected: Book? = null
+
+    val viewModel: BooksViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,6 +52,25 @@ class MainActivity : BaseActivity() {
 
     private fun configAdapter() {
         adapter.setOnItemClickListener {
+
+            val fragment = BookFragment()
+
+            supportFragmentManager.commit {
+                setCustomAnimations(
+                    R.anim.slide_in,
+                    R.anim.fade_out,
+                    R.anim.fade_in,
+                    R.anim.slide_out
+                )
+
+                add(R.id.containerMain, fragment)
+                addToBackStack(null)
+            }
+
+            bookSelected = it
+
+            showButtons(false)
+
         }
     }
 
@@ -67,6 +93,7 @@ class MainActivity : BaseActivity() {
             when (response) {
                 is Resource.Success -> {
                     response.data?.let {
+                        booksList = it.books
                         adapter.differ.submitList(it.books)
                         hideLoading()
                     }
@@ -88,4 +115,13 @@ class MainActivity : BaseActivity() {
             }
         }
     }
+
+
+
+    override fun showButtons(boolean: Boolean) {
+        binding.btnSearch.visibility = if (boolean) View.VISIBLE else View.GONE
+        binding.btnNext.visibility = if (boolean) View.VISIBLE else View.GONE
+    }
+
+    override fun getBookSelected(): Book? = bookSelected
 }

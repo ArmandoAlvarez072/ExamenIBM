@@ -4,12 +4,13 @@
     <dimen name="common_padding_default">16dp</dimen>
     <dimen name="common_padding_lateral">24dp</dimen>
     <dimen name="corner_radius">15dp</dimen>
+    <dimen name="icon_save">32dp</dimen>
     <dimen name="corner_radius_button">6dp</dimen>
     <dimen name="card_elevation">5dp</dimen>
     <dimen name="img_size">80dp</dimen>
     <dimen name="gif_loading_size">60dp</dimen>
     <dimen name="font_size_title">30sp</dimen>
-    <dimen name="font_size_body">14sp</dimen>
+    <dimen name="font_size_body">16sp</dimen>
     <dimen name="font_size_btn">16sp</dimen>
     <dimen name="font_size_subtitle">20sp</dimen>
     <dimen name="separator_line">2dp</dimen>
