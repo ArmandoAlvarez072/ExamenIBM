@@ -11,9 +11,9 @@ class GetFilteredBooksUseCase(
     suspend fun execute(
         title: String,
         filter: String,
-        page: Int,
+        startIndex: Int,
         results: Int
     ): Resource<BooksResponse> {
-        return repository.getFilteredBooks(title, filter, page, results)
+        return repository.getFilteredBooks(title, filter, startIndex, results)
     }
 }

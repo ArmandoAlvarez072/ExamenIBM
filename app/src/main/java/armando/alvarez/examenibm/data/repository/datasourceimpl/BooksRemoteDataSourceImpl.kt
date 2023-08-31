@@ -8,16 +8,16 @@ import retrofit2.Response
 class BooksRemoteDataSourceImpl(
     private val booksApiService: BooksApiService
 ) : BooksRemoteDataSource {
-    override suspend fun getBooks(title: String, page: Int, results: Int): Response<BooksResponse> {
-        return booksApiService.getBooks(title, page, results)
+    override suspend fun getBooks(title: String, startIndex: Int, results: Int): Response<BooksResponse> {
+        return booksApiService.getBooks(title, startIndex, results)
     }
 
     override suspend fun getFilteredBooks(
         title: String,
         filter: String,
-        page: Int,
+        startIndex: Int,
         results: Int
     ): Response<BooksResponse> {
-        return booksApiService.getFilteredBooks(title, filter, page, results)
+        return booksApiService.getFilteredBooks(title, filter, startIndex, results)
     }
 }

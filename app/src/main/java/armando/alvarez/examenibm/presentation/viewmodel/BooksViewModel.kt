@@ -24,13 +24,13 @@ class BooksViewModel @Inject constructor(
 
     var booksResponse: MutableLiveData<Resource<BooksResponse>> = MutableLiveData()
 
-    fun getBooks(title: String, page: Int, results: Int) = viewModelScope.launch(
+    fun getBooks(title: String, startIndex: Int, results: Int) = viewModelScope.launch(
         Dispatchers.IO
     ) {
         booksResponse.postValue(Resource.Loading())
         try {
             if (Network.isNetworkAvailable(application)) {
-                val apiResult = getBooksUseCase.execute(title, page, results)
+                val apiResult = getBooksUseCase.execute(title, startIndex, results)
                 booksResponse.postValue(apiResult)
             } else {
                 booksResponse.postValue(Resource.Error("No hay encontró conexión a internet"))
@@ -40,14 +40,14 @@ class BooksViewModel @Inject constructor(
         }
     }
 
-    fun getFilteredBooks(title: String, filter: String, page: Int, results: Int) =
+    fun getFilteredBooks(title: String, filter: String, startIndex: Int, results: Int) =
         viewModelScope.launch(
             Dispatchers.IO
         ) {
             booksResponse.postValue(Resource.Loading())
             try {
                 if (Network.isNetworkAvailable(application)) {
-                    val apiResult = getFilteredBooksUseCase.execute(title, filter, page, results)
+                    val apiResult = getFilteredBooksUseCase.execute(title, filter, startIndex, results)
                     booksResponse.postValue(apiResult)
                 } else {
                     booksResponse.postValue(Resource.Error("No hay encontró conexión a internet"))

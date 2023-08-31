@@ -6,7 +6,6 @@ import android.os.Looper
 import android.view.View
 import android.widget.ArrayAdapter
 import androidx.activity.viewModels
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
 import androidx.fragment.app.commit
 import androidx.lifecycle.MutableLiveData
@@ -33,8 +32,10 @@ class MainActivity : BaseActivity(), MainAux {
     private var bookSelected: Book? = null
 
     private var results = 10
-    private var page = 1
+    private var startIndex = 0
+    private var page = 0
     private var filter = ""
+    private var searchSize = 0
 
     val viewModel: BooksViewModel by viewModels()
 
@@ -79,15 +80,33 @@ class MainActivity : BaseActivity(), MainAux {
 
     private fun configListeners() {
         binding.btnSearch.setOnClickListener {
+            page = 0
+            startIndex = 0
+            getBooks()
+        }
+
+        binding.btnPrevious.setOnClickListener {
+            page--
+            startIndex = page * results
+            binding.btnNext.visibility = View.VISIBLE
+            getBooks()
+        }
+
+        binding.btnNext.setOnClickListener {
+            page++
+            startIndex = page * results
+            binding.btnPrevious.visibility = View.VISIBLE
             getBooks()
         }
 
         binding.actvFilter.setOnItemClickListener { adapterView, view, position, id ->
+            page = 0
+            startIndex = 0
             filter = filterValues[position]
             getBooks()
         }
 
-        binding.actvFilter.setOnItemClickListener { adapterView, view, position, id ->
+        binding.actvResults.setOnItemClickListener { adapterView, view, position, id ->
             results = resultsArray[position]
             getBooks()
         }
@@ -188,9 +207,14 @@ class MainActivity : BaseActivity(), MainAux {
                 viewModel.booksResponse = MutableLiveData()
 
                 if (filter.isEmpty()) {
-                    viewModel.getBooks(binding.etSearch.text.toString(), page, results)
+                    viewModel.getBooks(binding.etSearch.text.toString(), startIndex, results)
                 } else {
-                    viewModel.getFilteredBooks(binding.etSearch.text.toString(), filter, page, results)
+                    viewModel.getFilteredBooks(
+                        binding.etSearch.text.toString(),
+                        filter,
+                        startIndex,
+                        results
+                    )
                 }
 
                 viewModel.booksResponse.observeOnce(this) { response ->
@@ -200,11 +224,18 @@ class MainActivity : BaseActivity(), MainAux {
                                 hideLoading()
                                 if (it.books?.size!! > 0) {
                                     booksList = it.books
+                                    if (startIndex == 0) {
+                                        searchSize = it.totalItems!!
+                                    }
+
                                     adapter.differ.submitList(it.books)
                                     binding.tilResults.visibility = View.VISIBLE
                                     binding.tilFilter.visibility = View.VISIBLE
+                                    configPager()
                                 } else {
                                     booksList = mutableListOf()
+                                    binding.btnNext.visibility = View.INVISIBLE
+                                    binding.btnPrevious.visibility = View.INVISIBLE
                                     adapter.differ.submitList(booksList)
                                     Handler(Looper.getMainLooper()).postDelayed({
                                         showAlert(
@@ -213,6 +244,7 @@ class MainActivity : BaseActivity(), MainAux {
                                             null
                                         )
                                     }, 200)
+
                                 }
                             }
                         }
@@ -243,6 +275,23 @@ class MainActivity : BaseActivity(), MainAux {
             }
         } else {
             getFavoritesBooks()
+        }
+    }
+
+    private fun configPager() {
+        if(searchSize > results){
+            binding.btnNext.visibility = View.VISIBLE
+
+            if(page == 0){
+                binding.btnPrevious.visibility = View.INVISIBLE
+            }else{
+                if((page) * results >= searchSize ){
+                    binding.btnNext.visibility = View.INVISIBLE
+                }
+            }
+        }else{
+            binding.btnNext.visibility = View.INVISIBLE
+            binding.btnPrevious.visibility = View.INVISIBLE
         }
     }
 

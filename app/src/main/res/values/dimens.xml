@@ -11,7 +11,7 @@
     <dimen name="gif_loading_size">60dp</dimen>
     <dimen name="font_size_title">30sp</dimen>
     <dimen name="font_size_body">16sp</dimen>
-    <dimen name="font_size_btn">16sp</dimen>
+    <dimen name="font_size_btn">14sp</dimen>
     <dimen name="font_size_subtitle">20sp</dimen>
     <dimen name="separator_line">2dp</dimen>
     <dimen name="actv_results">140dp</dimen>

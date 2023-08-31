@@ -11,7 +11,7 @@ interface BooksApiService {
         @Query("q")
         title: String,
         @Query("startIndex")
-        page: Int,
+        startIndex: Int,
         @Query("maxResults")
         results: Int
     ) : Response<BooksResponse>
@@ -23,7 +23,7 @@ interface BooksApiService {
         @Query("filter")
         filter: String,
         @Query("startIndex")
-        page: Int,
+        startIndex: Int,
         @Query("maxResults")
         results: Int
     ) : Response<BooksResponse>

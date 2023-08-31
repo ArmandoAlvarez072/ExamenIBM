@@ -8,7 +8,7 @@ class GetBooksUseCase(
     private val repository: BooksRepository
 ) {
 
-    suspend fun execute(title: String, page: Int, results: Int): Resource<BooksResponse> {
-        return repository.getBooks(title, page, results)
+    suspend fun execute(title: String, startIndex: Int, results: Int): Resource<BooksResponse> {
+        return repository.getBooks(title, startIndex, results)
     }
 }

@@ -124,22 +124,42 @@
                 tools:listitem="@layout/item_book" />
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPrevious"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/common_padding_default"
+                android:layout_marginVertical="@dimen/common_padding_min"
+                android:paddingHorizontal="@dimen/common_padding_default"
+                android:text="@string/btn_previous"
+                android:textSize="@dimen/font_size_btn"
+                android:visibility="invisible"
+                app:cornerRadius="@dimen/corner_radius"
+                app:icon="@drawable/back_icon"
+                app:iconGravity="textStart"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/btnNext"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rvComments" />
+
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnNext"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/common_padding_default"
                 android:layout_marginVertical="@dimen/common_padding_min"
                 android:paddingHorizontal="@dimen/common_padding_default"
                 android:text="@string/btn_next"
                 android:textSize="@dimen/font_size_btn"
-                android:visibility="gone"
+                android:visibility="invisible"
                 app:cornerRadius="@dimen/corner_radius"
                 app:icon="@drawable/next_icon"
                 app:iconGravity="textEnd"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btnPrevious"
                 app:layout_constraintTop_toBottomOf="@id/rvComments" />
+
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
