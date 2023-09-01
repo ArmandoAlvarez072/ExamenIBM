@@ -1,0 +1,782 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 1189,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "mhduX-GZuKEC",
+      "etag": "Ida0XyATSb4",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/mhduX-GZuKEC",
+      "volumeInfo": {
+        "title": "CURIOSIDADES DE LA BIBLIA",
+        "subtitle": "Tomo I Miles de preguntas y respuestas",
+        "authors": [
+          "J. Stephen Lang"
+        ],
+        "publisher": "Editorial San Pablo",
+        "publishedDate": "1996",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "9586077381"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9789586077385"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 196,
+        "printType": "BOOK",
+        "categories": [
+          "Bible"
+        ],
+        "averageRating": 3.5,
+        "ratingsCount": 4,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "5.6.4.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=mhduX-GZuKEC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=mhduX-GZuKEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=mhduX-GZuKEC&pg=PA34&dq=biblia&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=mhduX-GZuKEC&dq=biblia&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/CURIOSIDADES_DE_LA_BIBLIA.html?hl=&id=mhduX-GZuKEC"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.mx/books/download/CURIOSIDADES_DE_LA_BIBLIA-sample-pdf.acsm?id=mhduX-GZuKEC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=mhduX-GZuKEC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... en la \u003cb\u003eBiblia\u003c/b\u003e ? 20. Después de Pedro y de Pablo ... qué mujer dio a luz un hijo a los 90 años y es la más nombrada de todas en la \u003cb\u003eBiblia\u003c/b\u003e ( 56 veces ) ? 2."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "yptwEAAAQBAJ",
+      "etag": "xpZE9dhO8iE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/yptwEAAAQBAJ",
+      "volumeInfo": {
+        "title": "La Biblia épica",
+        "authors": [
+          "Tyndale",
+          "Kingstone Media Group Inc"
+        ],
+        "publisher": "Tyndale House Publishers",
+        "publishedDate": "2021-04-06",
+        "description": "\"La historia de Dios sobre su redención y amor desde el Edén hasta la eternidad. Un hermoso viaje visual ilustrado por artistas de cómics de DC y Marvel\"--",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781496440778"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1496440773"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 841,
+        "printType": "BOOK",
+        "categories": [
+          "Young Adult Nonfiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=yptwEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=yptwEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=yptwEAAAQBAJ&printsec=frontcover&dq=biblia&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=yptwEAAAQBAJ&dq=biblia&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/La_Biblia_%C3%A9pica.html?hl=&id=yptwEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=yptwEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Originalmente publicado en inglâeâs en el 2016 en tres volâumenes como The Kingstone Bible por Kingstone Comics."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "4T6aDwAAQBAJ",
+      "etag": "rODRt0/wXOU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/4T6aDwAAQBAJ",
+      "volumeInfo": {
+        "title": "La Biblia, libro sagrado",
+        "authors": [
+          "Junco Garza, Carlos"
+        ],
+        "publisher": "Verbo Divino",
+        "publishedDate": "2010-05-15",
+        "description": "La Biblia, libro sagrado nos acerca al misterio de la Palabra de Dios escrita en palabras humanas. Aborda los temas de una introducción general a la Sagrada Escritura: revelación, transmisión, nociones generales, canonicidad, inspiración, verdad y fuerza, interpretación, contenido y su papel en la vida de la Iglesia. Este libro ayuda a penetrar el misterio del Libro, expresión del amor de Dios, de su llamada a vivir en comunión. Las palabras del Libro invitan al encuentro con Dios y los hermanos y hermanas, en la libertad y la justicia, en la verdad y la transparencia, en la paz y el respeto, en la solidaridad y el amor.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9788481699692"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "8481699691"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 100,
+        "printType": "BOOK",
+        "categories": [
+          "Religion"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=4T6aDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=4T6aDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=4T6aDwAAQBAJ&printsec=frontcover&dq=biblia&hl=&cd=3&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=4T6aDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=4T6aDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 108.23,
+          "currencyCode": "MXN"
+        },
+        "retailPrice": {
+          "amount": 108.23,
+          "currencyCode": "MXN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=4T6aDwAAQBAJ&rdid=book-4T6aDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 108230000,
+              "currencyCode": "MXN"
+            },
+            "retailPrice": {
+              "amountInMicros": 108230000,
+              "currencyCode": "MXN"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.mx/books/download/La_Biblia_libro_sagrado-sample-pdf.acsm?id=4T6aDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=4T6aDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "La Biblia, libro sagrado nos acerca al misterio de la Palabra de Dios escrita en palabras humanas."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "sptwEAAAQBAJ",
+      "etag": "Ms6NTc9WNwE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/sptwEAAAQBAJ",
+      "volumeInfo": {
+        "title": "Biblia Inspira NTV",
+        "authors": [
+          "Tyndale"
+        ],
+        "publisher": "Tyndale House Publishers",
+        "publishedDate": "2022-10-18",
+        "description": "La Biblia Inspira NTV es la versión en español de la Inspire Bible, la Biblia para colorear más vendida. Diseñada completamente en español, esta Biblia utiliza el texto de la Nueva Traducción Viviente en una sola columna y amplio margen con más de 400 hermosas ilustraciones en blanco y negro para inspirar la creatividad. A lo largo de toda la Biblia hay ilustraciones de página completa y página parcial que dan la oportunidad de colorear versículos bíblicos para que la Biblia sea personalizada y única. Cada página tiene un margen de 5 centímetros de ancho con ilustraciones de las Escrituras en blanco y negro o un espacio con renglones claros para escribir notas y reflexiones personales o dibujar y crear. La Biblia Inspira tiene papel de Biblia de alta calidad con un tamaño de letra generoso de 8,25 que garantiza una legibilidad óptima. Biblia Inspira is the Spanish version of Inspire Bible, the bestselling coloring Bible in English. Developed completely new for the Spanish-speaking market, the Biblia Inspira NTV uses the text of the Nueva Traducción Viviente in a single-column, wide-margin journaling Bible with over 400 beautiful line-art illustrations to inspire creativity. Full-page and partial-page Scripture art is interspersed throughout the Bible and can be colored in to make the Bible unique, colorful, and customized. Every page has two-inch-wide margins with either Scripture line-art or lightly ruled space that can be used to write notes and reflections or to draw and create. Biblia Inspira has high-quality Bible paper with a generous 8.25 font that ensures optimal readability.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781496442895"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "149644289X"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 1569,
+        "printType": "BOOK",
+        "categories": [
+          "Bibles"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=sptwEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=sptwEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=sptwEAAAQBAJ&printsec=frontcover&dq=biblia&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=sptwEAAAQBAJ&dq=biblia&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Biblia_Inspira_NTV.html?hl=&id=sptwEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=sptwEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Developed completely new for the Spanish-speaking market, the Biblia Inspira NTV uses the text of the Nueva Traducción Viviente in a single-column, wide-margin journaling Bible with over 400 beautiful line-art illustrations to inspire ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "tfSyBgAAQBAJ",
+      "etag": "qDOUH/1Pc4o",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/tfSyBgAAQBAJ",
+      "volumeInfo": {
+        "title": "Iniciación a la Biblia",
+        "authors": [
+          "Arquidiócesis México",
+          "AA. VV."
+        ],
+        "publisher": "PPC EDITORIAL S.A. DE C.V.",
+        "publishedDate": "2015-02-16",
+        "description": "Este manual quiere apoyar a los discípulos misioneros a cultivar la familiaridad con la Sagrada Escritura, de modo que ésta sea alimento que revitalice constantemente su encuentro con Jesucristo. Para ello: Alienta a leer, meditar y orar cotidianamente la Palabra de Dios. Presenta los elementos que permiten acercarse a la Biblia como Palabra de Dios, mensaje actual para nosotros. Introduce a las distintas partes de la Biblia, teniendo como punto de referencia la persona de Jesucristo y los Evangelios. Guía para aprender a escuchar la Palabra de Dios de modo que sea la luz de nuestro caminar de discípulos misioneros de Jesús, para testimoniar el Evangelio.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9786078315680"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "6078315684"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 128,
+        "printType": "BOOK",
+        "categories": [
+          "Bibles"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.4.4.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=tfSyBgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=tfSyBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=tfSyBgAAQBAJ&printsec=frontcover&dq=biblia&hl=&cd=5&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=tfSyBgAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=tfSyBgAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 55,
+          "currencyCode": "MXN"
+        },
+        "retailPrice": {
+          "amount": 55,
+          "currencyCode": "MXN"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=tfSyBgAAQBAJ&rdid=book-tfSyBgAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 55000000,
+              "currencyCode": "MXN"
+            },
+            "retailPrice": {
+              "amountInMicros": 55000000,
+              "currencyCode": "MXN"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.mx/books/download/Iniciaci%C3%B3n_a_la_Biblia-sample-epub.acsm?id=tfSyBgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.mx/books/download/Iniciaci%C3%B3n_a_la_Biblia-sample-pdf.acsm?id=tfSyBgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=tfSyBgAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Este manual quiere apoyar a los discípulos misioneros a cultivar la familiaridad con la Sagrada Escritura, de modo que ésta sea alimento que revitalice constantemente su encuentro con Jesucristo."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "msuKzXhQ1ioC",
+      "etag": "cE7Q2J5USUY",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/msuKzXhQ1ioC",
+      "volumeInfo": {
+        "title": "La Santa Biblia, 4",
+        "publishedDate": "1857",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "BAB:1005335272"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 688,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.4.7.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=msuKzXhQ1ioC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=msuKzXhQ1ioC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=msuKzXhQ1ioC&pg=PA230&dq=biblia&hl=&cd=6&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=msuKzXhQ1ioC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=msuKzXhQ1ioC"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=msuKzXhQ1ioC&rdid=book-msuKzXhQ1ioC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com.mx/books/download/La_Santa_Biblia_4.epub?id=msuKzXhQ1ioC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com.mx/books/download/La_Santa_Biblia_4.pdf?id=msuKzXhQ1ioC&hl=&output=pdf&sig=ACfU3U3SQQ1zuT_7DSZr7qLfhAT9ytnC9g&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=msuKzXhQ1ioC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "9bJ7HAAACAAJ",
+      "etag": "MbRf/u/VNfE",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/9bJ7HAAACAAJ",
+      "volumeInfo": {
+        "title": "Biblia plenitud",
+        "subtitle": "Versión Reina Valera, 1960 : la Biblia de estudio que le ayudará a comprender y aplicar la plenitud del Espíritu Santo en su diario vivir",
+        "authors": [
+          "Rvr 1960- Reina Valera 1960"
+        ],
+        "publisher": "Spirit-Filled Life Bibles",
+        "publishedDate": "2006-02",
+        "description": "Una Biblia de estudio preferida por enfatizar en sus notas y elementos informativos una vida din mica y llena del poder del Esp ritu. Esta formidable y reveladora Biblia de estudio ofrece a todo el que tenga hambre de Dios un enfoque total sobre lo que encierra la vida llena del Esp ritu. Adem s de bosquejo detallado e introducci n a cada libro de la Biblia, y notas extensas que reflejan erudici n, esta Biblia incluye: Din mica del Reino: M s de 350 art culos que aclaran 22 temas siempre vigentes que presentan una comprensi n pr ctica y prof tica para el ministerio y la vida del cristiano Riqueza Literaria: M s de 550 definiciones detalladas de palabras importantes del griego y del hebreo con sus conceptos b sicos Verdad en Acci n: Aplicaci n espec fica de las lecciones que se encuentran en cada libro de las Escrituras a la vida diaria en el hogar y el trabajo Gr ficas y tablas Mapas a color Mapas en el texto Concordancia",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0899227058"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780899227054"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Bibles"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=9bJ7HAAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=9bJ7HAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=9bJ7HAAACAAJ&dq=biblia&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=9bJ7HAAACAAJ&dq=biblia&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Biblia_plenitud.html?hl=&id=9bJ7HAAACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=9bJ7HAAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Truth in Action (Application of Scripture to everyday life). References at the end of the verses. Words of Jesus in Red. Maps in full color. Concordance. Maps and graphics in the text. Introduction to each book. Outline of each book."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "8WXt8sn-nvgC",
+      "etag": "HnQLqdclQ+M",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/8WXt8sn-nvgC",
+      "volumeInfo": {
+        "title": "¿Nos Dio Roma la Biblia en Español?",
+        "subtitle": "",
+        "authors": [
+          "David W. Daniels"
+        ],
+        "publisher": "Chick Publications",
+        "publishedDate": "2013",
+        "description": "La historia entrelazada de la preservación de las Biblias en español e Inglés Mientras realizaba la investigación para escribir este libro, me fascinó ver cuán entrelazadas están las historias de las Biblias en español y en inglés. Existe una buena razón para esto. La historia de todas las Biblias preservadas principia de la misma manera. A lo largo de la historia, Dios tomó decisiones para escoger a un pueblo (Israel), los idiomas originales (hebreo y griego) y cómo preservaría Sus palabras (por medio de creyentes fieles, no mediante eruditos llenos de dudas). Por esta razón, la primera parte de este libro es prácticamente igual a la del libro en inglés, Did the Catholic Church Give Us the Bible? En el tiempo de la Reforma, en la década de los 1500, mientras muchas otras traducciones de la Biblia se separan en historias diferentes, la historia de la Biblia de Dios en español está entretejida con la historia de la Biblia en inglés. Los mismos nombres y fechas surgen para los creyentes de habla inglesa e hispanohablantes, por distintas razones, pero con el mismo propósito: hacer llegar a esos pueblos las palabras santas y preservadas de Dios. La historia del español de la Biblia se enriquece al conocer la historia del inglés. Y la historia del inglés llega a ser más completa al conocer la historia del español. Sin embargo, hay también una advertencia. Así como la gente de habla inglesa ha enfrentado una revolución diabólica de duda con las Biblias modernas, también en español está comenzando esa misma lucha. ¿Vencerán al fin las palabras de Dios? Únicamente si aprendemos de la historia y nos aferramos a las palabras preservadas de Dios. ¿Nos Dio Roma la Biblia en Español? incluye dos capítulos más y es aproximadamente 20% más extenso que el libro en inglés, y contiene mucha información importante que no es muy conocida. No obstante, cuando los hermanos y hermanas hispanohablantes conozcan la verdadera razón para publicar las nuevas versiones de la Biblia en español, y sepan cuál es la opinión que tienen de ellos los “eruditos” de habla inglesa, tal vez reconsideren seriamente si deben confiar en esas personas y sus asociados jesuitas, y decidan más bien confiar en las palabras preservadas de Dios en español.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780758909633"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0758909632"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 208,
+        "printType": "BOOK",
+        "categories": [
+          "Religion"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "2.4.5.0.preview.3",
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=8WXt8sn-nvgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=8WXt8sn-nvgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=8WXt8sn-nvgC&printsec=frontcover&dq=biblia&hl=&cd=8&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=8WXt8sn-nvgC&dq=biblia&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Nos_Dio_Roma_la_Biblia_en_Espa%C3%B1ol.html?hl=&id=8WXt8sn-nvgC"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.mx/books/download/Nos_Dio_Roma_la_Biblia_en_Espa%C3%B1ol-sample-epub.acsm?id=8WXt8sn-nvgC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com.mx/books/download/Nos_Dio_Roma_la_Biblia_en_Espa%C3%B1ol-sample-pdf.acsm?id=8WXt8sn-nvgC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=8WXt8sn-nvgC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Así como la gente de habla inglesa ha enfrentado una revolución diabólica de duda con las Biblias modernas, también en español está comenzando esa misma lucha. ¿Vencerán al fin las palabras de Dios? Únicamente si aprendemos de la ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "ljGREAAAQBAJ",
+      "etag": "Tyvb/ME+AEU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ljGREAAAQBAJ",
+      "volumeInfo": {
+        "title": "La Biblia Católica: Tamaño grande, tapa dura, marrón, con Virgen",
+        "authors": [
+          "Biblia de América"
+        ],
+        "publisher": "National Geographic Books",
+        "publishedDate": "2019-09-10",
+        "description": "La Biblia Católica en español para el creyente de hoy. Edición en tapa dura, resistente y ligera, con la imagen de la Virgen de Guadalupe en portada Esta preciosa y resistente edición de la Biblia Católica contiene los textos íntegros de la Biblia, en una traducción que cuenta con la aprobación de la Conferencia del Episcopado Mexicano, la Conferencia Episcopal de Colombia y la Conferencia Episcopal de Chile. Su traducción fluida, su nuevo diseño y fácil legibilidad, hacen amena la lectura de esta Biblia, ideal para regalo o para uso personal. Cada Libro cuenta con una introducción que explica su contenido, así como notas a pie de página y mapas que ofrecen un contexto y facilitan la comprensión de la lectura. Al final, el lector encontrará un completo Vocabulario bíblico, así como la sección Cronología y mapas, que complementan el texto bíblico. Además, esta edición de la Biblia Católica, con un tamaño de 5.75” x 9.25”, inicia con una página para dedicatoria. ENGLISH DESCRIPTION The Catholic Bible: Leather-look hardcover, brown color, with the Virgin of Guadalupe image on the cover. The Catholic Bible for today’s believer. Hardcover, resistant and lightweight, with the image of the Virgin of Guadalupe on the cover. This beautiful and resistant edition of the Catholic Bible contains the complete texts of the Bible, in a translation that has been approved by the Episcopal Conference of Mexico, the Episcopal Conference of Colombia and the Episcopal Conference of Chile. Its fluent translation, its new design and its large print make the reading enjoyable, perfect for a gift or for personal use. Each book has an introduction that explains its content, as well as footnotes and maps that provide context and ease the reading comprehension. In the end, the reader will find a complete Biblical glossary, as well as a chronology and a maps section, which complement the biblical text. In addition, this edition of the Catholic Bible, with a size of 5.75\" x 9.25\", begins with a page for a dedication.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781949061925"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1949061922"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Bibles"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ljGREAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ljGREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=ljGREAAAQBAJ&dq=biblia&hl=&cd=9&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=ljGREAAAQBAJ&dq=biblia&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/La_Biblia_Cat%C3%B3lica_Tama%C3%B1o_grande_tapa.html?hl=&id=ljGREAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ljGREAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "In addition, this edition of the Catholic Bible, with a size of 5.75&quot; x 9.25&quot;, begins with a page for a dedication."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "wSKkbwAACAAJ",
+      "etag": "rUoPzyu5cMg",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/wSKkbwAACAAJ",
+      "volumeInfo": {
+        "title": "Biblia Bilingüe",
+        "subtitle": "Versión Reina-Valera, 1960",
+        "authors": [
+          "Rvr 1960- Reina Valera 1960"
+        ],
+        "publishedDate": "2010",
+        "description": "¡La edición ideal para personas que están descubriendo un segundo idioma con las Escrituras! La Biblia bilingüe, versión Reina Valera 1960, te ayudará a examinar y a discernir la Palabra de Dios con dos idiomas lado a lado. Es ideal para usar en comunicación con personas que hablan otro idioma. Esta Biblia promete ser fácil de leer y entender al ir estudiando las Escrituras de una manera nueva y directa. Está diseñada para alcanzar a la nueva generación con un lenguaje fácil de entender. Le provee al lector las herramientas esenciales para el estudio y el discipulado. Incluye: Página de presentación Versión en español: RVR1960 Versión en inglés: NKJV Dos columnas para comparación fácil Palabras de Cristo en rojo Texto bilingüe Mapas a todo color en Español y en Inglés Great for people discovering a second language with the Scriptures! The Bilingual Bible, New King James Version, helps you examine and discern God's Word side by side in two languages! Ideal for communicating with speakers of another language, this Bible promises to be easy to read and understand as you search the Scriptures in a new, straightforward way. Geared to reach a new generation in very accessible language, it provides the reader with essential tools for study and discipleship. Features: Presentation page English version: NKJV Spanish version: RVR1960 Two columns for quick comparison Words of Christ in red Bilingual text Full color maps in English and Spanish",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "1602554455"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9781602554450"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Bibles"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=wSKkbwAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=wSKkbwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "es",
+        "previewLink": "http://books.google.com.mx/books?id=wSKkbwAACAAJ&dq=biblia&hl=&cd=10&source=gbs_api",
+        "infoLink": "http://books.google.com.mx/books?id=wSKkbwAACAAJ&dq=biblia&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Biblia_Biling%C3%BCe.html?hl=&id=wSKkbwAACAAJ"
+      },
+      "saleInfo": {
+        "country": "MX",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "MX",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=wSKkbwAACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "¡La edición ideal para personas que están descubriendo un segundo idioma con las Escrituras! La Biblia bilingüe, versión Reina Valera 1960, te ayudará a examinar y a discernir la Palabra de Dios con dos idiomas lado a lado."
+      }
+    }
+  ]
+}
